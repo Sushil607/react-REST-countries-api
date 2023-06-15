@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+/**
+* ! CSS Variables
+**/
+
+:root{
+  --dark-blue:hsl(209, 23%, 22%);
+  --very-dark-blue-bg:hsl(207, 26%, 17%);
+  --very-dark-blue-text:hsl(200, 15%, 8%);
+  --dark-gray:hsl(0, 0%, 52%);
+  --very-light-gray:hsl(0, 0%, 98%);
+  --white:hsl(0, 0%, 100%);
+}
+
+/**
+* ! Resetting Base Styles
+**/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/**
+* ! Components & Pages
+**/
+
+/**
+* ! Header Component
+**/
+
+/**
+* ! Home Page 
+**/
+
+/**
+* ! CountryCard Component
+**/
+
+/**
+* ! Country Details Page 
+**/
+
+/**
+* ! BorderCountry Component
+**/
+
+/**
+* ! NotFound Component
+**/
