@@ -173,8 +173,9 @@ option{
 .countries-container{
   padding: 1rem 0;
   display: flex;
-  gap: 60px;
+  gap: 50px;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 /**
@@ -313,6 +314,9 @@ option{
   }
   .countries-container{
     gap: 30px;
+  }
+  .country-details{
+    flex-direction: column;
   }
 }
 
