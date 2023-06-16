@@ -139,6 +139,10 @@ a{
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.search-field input::placeholder{
+  color: #2e2c2c;
+}
+
 .dark .search-field input{
   background-color: var(--dark-blue);
   color: var(--white);
