@@ -280,6 +280,7 @@ option{
 
 .dark .border-country{
   box-shadow: 1px 1px 12px #2c1818;
+  background-color: var(--dark-blue);
 }
 
 .border-country{
@@ -325,5 +326,6 @@ option{
   }
   .country-details img{
     height: 200px;
+    object-fit: contain;
   }
 }

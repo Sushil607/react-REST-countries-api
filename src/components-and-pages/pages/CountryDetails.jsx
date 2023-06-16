@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 
 import { useParams , useNavigate } from 'react-router-dom'
 
@@ -9,8 +9,11 @@ import { IoMdArrowBack } from "react-icons/io"
 
 import BorderCountry from "../components/BorderCountry"
 
+import { ThemeContext } from '../../contexts/ThemeContext'
+
 const CountryDetails = () => {
-  const darkTheme = false
+  const context = useContext(ThemeContext)
+  const darkTheme = context.darkTheme
   // State
   const [isLoading,setIsLoading] = useState(false)
   const [country,setCountry] = useState([])
@@ -31,7 +34,6 @@ const CountryDetails = () => {
     },2000)
   },[])
 
-  console.log(country)
   return (
     <main className={`${darkTheme && 'dark'} main`}>
             <div className="container">

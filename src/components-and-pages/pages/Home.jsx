@@ -1,9 +1,14 @@
+import { useContext } from "react"
+
 import CountryCard from "../components/CountryCard"
 
 import {BiSearch} from "react-icons/bi"
 
+import { ThemeContext } from "../../contexts/ThemeContext"
+
 const Home = ({isLoading,filterCountries,searchQuery,setSearchQuery,setFilterRegion}) => {
-    const darkTheme = false
+    const context = useContext(ThemeContext)
+    const darkTheme = context.darkTheme
     return(
         <main className={`${darkTheme && 'dark'} main`}>
             <div className="container">
