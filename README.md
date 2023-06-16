@@ -28,11 +28,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Home Light](./screenshots/desktop-home-light.png)
+![Desktop Home Dark](./screenshots/desktop-home-dark.png)
+![Desktop Detail Light](./screenshots/desktop-detail-light.png)
+![Desktop Detail Dark](./screenshots/desktop-detail-dark.png)
+![Mobile Home Light](./screenshots/mobile-home-light.png)
+![Mobile Home Dark](./screenshots/mobile-home-dark.png)
+![Mobile Detail Light](./screenshots/mobile-detail-light.png)
+![Mobile Detail Dark](./screenshots/mobile-detail-dark.png)
 
 ### Links
 
-- Live Site URL: [ URL here](https://your-live-site-url.com)
+- Live Site URL: [Vercel URL here](https://react-rest-countries-api-three.vercel.app/)
 
 ## My process
 
@@ -42,7 +49,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
 ## Author
