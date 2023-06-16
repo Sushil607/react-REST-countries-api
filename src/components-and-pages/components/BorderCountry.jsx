@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BorderCountry = () => {
+const BorderCountry = ({borderCountry}) => {
   return (
-    <article className='border-country'>Border Country</article>
+    <article className='border-country'>{borderCountry}</article>
   )
 }
 

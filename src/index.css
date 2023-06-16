@@ -28,6 +28,41 @@ body{
   font-family: 'Nunito Sans', sans-serif;
 }
 
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  padding: 1rem 4rem;
+}
+
+.moon-icon{
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
 /**
 * ! Components & Pages
 **/
@@ -36,22 +71,259 @@ body{
 * ! Header Component
 **/
 
+
+.dark.header{
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.header .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark button{
+    background-color: var(--dark-blue);
+    color: white;
+}
+
 /**
 * ! Home Page 
 **/
+
+.main{
+  min-height: 100vh;
+  background-color: var(--very-light-gray);
+}
+
+.dark.main{
+  background-color: var(--very-dark-blue-bg);
+  color: var(--white);
+}
+
+.filters-container{
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-field{
+  border-radius: 4px;
+  width: 500px;
+  height: 40px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 1px 1px 12px #ccc;
+}
+
+.dark .search-field{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  box-shadow: 1px 1px 12px #2c1818;
+}
+
+.search-field input{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--dark-gray);
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.dark .search-field input{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.dark .search-field input::placeholder{
+  color: var(--white);
+}
+
+.select{
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.dark .select{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+option{
+  border: none;
+  outline: none;
+  zoom: 1.1;
+}
+
+.countries-container{
+  padding: 1rem 0;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
 
 /**
 * ! CountryCard Component
 **/
 
+.country-card{
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: white;
+  width: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 4px 4px rgba(0, 0, 0, 0.23);
+}
+
+.country-card img{
+  height: 160px;
+}
+
+.dark .country-card{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.country-card-info{
+  padding: 1rem;
+}
+
+.country-card .country-name{
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.country-card .info-group{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.country-card .info-label{
+  font-weight: 600;
+}
+
 /**
 * ! Country Details Page 
 **/
+
+.dark .back-btn{
+  box-shadow: 1px 1px 12px #2c1818;
+}
+
+.back-btn{
+  box-shadow: 1px 1px 12px #ccc;
+}
+
+.country-details{
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.country-details img{
+  height: 300px;
+  flex: 6;
+}
+
+.country-details-info{
+  flex: 6;
+}
+
+.country-details-columns{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.country-details .country-name{
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+} 
+
+.country-details-group{
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.country-details-label{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 
 /**
 * ! BorderCountry Component
 **/
 
+.dark .border-country{
+  box-shadow: 1px 1px 12px #2c1818;
+}
+
+.border-country{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: white;
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 1px 1px 12px #ccc;
+}
+
 /**
 * ! NotFound Component
 **/
+
+
+/**
+* ! Media Queries
+**/
+
+@media(max-width:768px){
+  .search-field{
+      margin-bottom: 1rem;
+  }
+  .countries-container{
+    gap: 30px;
+  }
+}
+
+@media(max-width:425px){
+  .header .container{
+    justify-content: center;
+  }
+  .container{
+      padding: 1rem 2rem;
+  }
+  .countries-container{
+    gap: 20px;
+    justify-content: center;
+  }
+  .country-details img{
+    height: 200px;
+  }
+}
