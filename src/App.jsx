@@ -21,10 +21,8 @@ function App() {
   // useEffect
   useEffect(()=> {
     setIsLoading(true)
-    setTimeout(()=> {
-      setCountries(countryData)
-      setIsLoading(false)
-    },2000)
+    setCountries(countryData)
+    setIsLoading(false)
   },[])
 
   // filter the countries

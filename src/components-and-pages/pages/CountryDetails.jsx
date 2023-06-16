@@ -27,11 +27,9 @@ const CountryDetails = () => {
 
   useEffect(()=> {
     setIsLoading(true)
-    setTimeout(()=> {
-      const c = countryData.filter((c)=> c.name === countryName)
-      setCountry(c[0])
-      setIsLoading(false)
-    },2000)
+    const c = countryData.filter((c)=> c.name === countryName)
+    setCountry(c[0])
+    setIsLoading(false)
   },[])
 
   return (
