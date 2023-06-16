@@ -299,6 +299,9 @@ option{
 * ! NotFound Component
 **/
 
+.not-found{
+  text-align: center;
+}
 
 /**
 * ! Media Queries
